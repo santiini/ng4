@@ -14,6 +14,7 @@ export class Child1Component implements OnInit {
   }
 
   getData() {
+    console.log(this.eventBusService);
     console.log(this.eventBusService.getData());
   }
   public triggerEventBus(): void {

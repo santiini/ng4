@@ -10,6 +10,7 @@ export class ParentComponent implements OnInit, AfterViewInit {
   // 存为自己的方法。下面可以通过testChild来关联子组件
   testChild: TestChildComponent;
   public data: string = 'zhiq';
+  public dataa: string = '父组件传给子组件的数据';
   public b: string = 'zhi';
   public ddd: string = '我是参数';
   constructor() { }

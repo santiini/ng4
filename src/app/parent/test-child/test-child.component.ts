@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class TestChildComponent implements OnInit {
   // 我在这里声明一下我需要什么变量。你们要用我就得给我传这个变量
   @Input() DATA: string;
-  // 暴露一个事件发射器，用来发射事件。可以在父组件监听这个事件发射器。
+  // 定义一个事件发射器，用来发射事件。可以在父组件监听这个事件发射器，当事件发射器被触发时执行某些操作。
   @Output()
   public emitEvent = new EventEmitter<string>();
   constructor() { }
