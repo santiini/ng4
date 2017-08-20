@@ -1,8 +1,0 @@
-<div class="panel panel-primary">
-  <div class="panel-heading">双向绑定</div>
-  <div class="panel-body">
-    <!-- 向子组件传递一个size属性。值为fontSizePx.同时将子组件的size和父组件的fontSizePx绑定起来  -->
-    <app-font-resizer [(size)]="fontSizePx"></app-font-resizer>
-    <div [style.font-size.px]="fontSizePx">Resizable Text</div>
-  </div>
-</div>
