@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home.component';
-import { homeRoutes } from './home.routes';
+import { HomeComponent } from './home.component';       // 引入home组件（包括逻辑/页面）
+import { homeRoutes } from './home.routes';             // 引入路由配置
 
 @NgModule({
     declarations: [
@@ -13,5 +13,5 @@ import { homeRoutes } from './home.routes';
     providers: [],
     bootstrap: []
 })
-
+// 将路由配置暴露出去
 export class HomeModule { }
