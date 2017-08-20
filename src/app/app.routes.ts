@@ -1,7 +1,5 @@
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { JokesComponent } from './jokes/jokes.component';
-
+// 异步路由的话就不在这里面引入所有的路由组件，要把component改为loadChildren
 export const appRoutes = [
     {
         path: '',
@@ -10,14 +8,14 @@ export const appRoutes = [
     },
     {
         path: 'home',
-        component: HomeComponent
+        loadChildren: './home/home.module#HomeModule'       // 指向home.module.ts下的HomeModule,会在home.module.ts内声明路由配置
     },
     {
         path: 'jokes',
-        component: JokesComponent
+        loadChildren: './jokes/jokes.module#JokesModule'        // 指向jokes.module.ts下的JokesModule
     },
     {
         path: '**',
-        component: HomeComponent
+        loadChildren: './home/home.module#HomeModule'       // 指向home.module.ts下的HomeModule
     }
 ];
