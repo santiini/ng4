@@ -1,10 +1,21 @@
 <div>
-  <button class="btn btn-success" (click)="show()">点击显示</button>
-  <button class="btn btn-success" (click)="hide()">点击隐藏</button>
-  <div class="panel panel-primary" [@flyIn] *ngIf="state">
+  <button nz-button [nzType]="'primary'" (click)="show()">点击显示</button>
+  <button nz-button [nzType]="'primary'" (click)="hide()">点击隐藏</button>
+  <!-- <div class="panel panel-primary" [@flyIn] *ngIf="state">
     <div class="panel-heading">飞入效果</div>
     <div class="panel-body">
       飞入效果
     </div>
-  </div>
+  </div> -->
+  <nz-card style="width:300px;" [@flyIn] *ngIf="state">
+    <ng-template #title>
+      卡片标题
+    </ng-template>
+    <ng-template #extra>
+      <a>More</a>
+    </ng-template>
+    <ng-template #body>
+      <p>卡片内容</p>
+    </ng-template>
+  </nz-card>
 </div>
