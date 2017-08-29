@@ -6,12 +6,16 @@ import { HttpModule } from '@angular/http';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AppComponent } from './app.component';
 import { TestFlyInComponent } from './test-fly-in/test-fly-in.component';
+import { TemplateComponent } from './template/template.component';
+import { ChildComponent } from './template/child/child.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestFlyInComponent
+    TestFlyInComponent,
+    TemplateComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

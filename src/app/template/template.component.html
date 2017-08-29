@@ -1,0 +1,14 @@
+<div>
+  <button nz-button [nzType]="'primary'" (click)="onSave($event)">保存</button>
+  <button #bbb nz-button [nzType]="'primary'" (click)="aaa(bbb)">点击</button>
+  <div [class.special]="isSpecial">Special</div>
+  <button [style.color]="isSpecial ? 'red' : 'green'">asd</button>
+  <div [ngClass]="classes">[ngClass] binding to the classes property</div>
+  <p>{{evilTitle}}</p>
+  <p [innerHTML]="evilTitle"></p>
+  <div class="bad curly special">Bad curly</div>
+  <div>
+    <app-child [(size)]="fontSizePx"></app-child>
+    <div [style.font-size.px]="fontSizePx">asdasdas</div>
+  </div>
+</div>
